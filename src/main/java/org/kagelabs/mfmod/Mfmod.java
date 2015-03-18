@@ -17,7 +17,6 @@ public class Mfmod {
     public static final String MODID = "mfmod";
     public static final String VERSION = "0.0.1";
 
-<<<<<<< HEAD
     private DenseIron denseIron;
     public Copper copper;
 
