@@ -17,7 +17,7 @@ public class Mfmod {
     public static final String MODID = "mfmod";
     public static final String VERSION = "0.0.1";
 
-    private DenseIron denseIron;
+    public DenseIron denseIron;
     public CopperBlock copperblock;
 
     @Mod.EventHandler
