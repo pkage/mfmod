@@ -28,5 +28,8 @@ public class Mfmod {
 
         creeperEssenseOre = new CreeperEssenseOre();
         GameRegistry.registerBlock(creeperEssenseOre, "Creeper Essense Ore");
+        
+        GameRegistry.addSmelting(denseIron, new ItemStack(Items.iron_ingot, 4), 0.0f);
+        GameRegistry.addSmelting(creeperEssenseOre, new ItemStack(Items.gunpowder, 4), 0.0f);
     }
 }
