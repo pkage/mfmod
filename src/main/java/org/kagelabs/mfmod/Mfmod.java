@@ -16,12 +16,16 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class Mfmod {
     public static final String MODID = "mfmod";
     public static final String VERSION = "0.0.1";
+    EventManager eventmanager = new EventManager();
 
-    public DenseIron denseIron;
-    public CreeperEssenseOre creeperEssenseOre;
+    public static DenseIron denseIron;
+    public static CreeperEssenseOre creeperEssenseOre;
 
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent e) {
+
+        GameRegistry.registerWorldGenerator(eventmanager, 128);
+
         denseIron = new DenseIron();
         GameRegistry.registerBlock(denseIron, denseIron.getName());
         System.out.println("Dense iron unlocalized: " + denseIron.getUnlocalizedName());
