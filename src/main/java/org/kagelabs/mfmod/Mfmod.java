@@ -18,7 +18,7 @@ public class Mfmod {
     public static final String VERSION = "0.0.1";
 
     public DenseIron denseIron;
-    public CopperBlock copperblock;
+    public CreeperEssenseOre creeperEssenseOre;
 
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent e) {
@@ -26,7 +26,7 @@ public class Mfmod {
         GameRegistry.registerBlock(denseIron, denseIron.getName());
         System.out.println("Dense iron unlocalized: " + denseIron.getUnlocalizedName());
 
-        copperblock = new CopperBlock();
-        GameRegistry.registerBlock(copperblock, "Copper Block");
+        creeperEssenseOre = new CreeperEssenseOre();
+        GameRegistry.registerBlock(creeperEssenseOre, "Creeper Essense Ore");
     }
 }

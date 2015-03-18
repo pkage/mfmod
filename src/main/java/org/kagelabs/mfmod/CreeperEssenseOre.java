@@ -7,11 +7,11 @@ import net.minecraft.creativetab.CreativeTabs;
 /**
  * Created by Philip on 3/17/15.
  */
-public class CopperBlock extends Block{
-    CopperBlock(){
+public class CreeperEssenseOre extends Block{
+    CreeperEssenseOre(){
         super(Material.rock);
-        setBlockName(Mfmod.MODID + "_" + "copperblock");
+        setBlockName(Mfmod.MODID + "_" + "creeperEssenseOre");
         setCreativeTab(CreativeTabs.tabBlock);
-        setBlockTextureName(Mfmod.MODID + ":" + "copperblock");
+        setBlockTextureName(Mfmod.MODID + ":" + "creeperEssenseOre");
     }
 }
