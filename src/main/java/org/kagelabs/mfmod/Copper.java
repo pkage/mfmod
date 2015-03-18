@@ -12,5 +12,6 @@ public class Copper extends Block{
         super(Material.rock);
         setBlockName(Mfmod.MODID + "_" + "Copper Ore");
         setCreativeTab(CreativeTabs.tabBlock);
+        setBlockTextureName(Mfmod.MODID + ":" + "copper");
     }
 }
